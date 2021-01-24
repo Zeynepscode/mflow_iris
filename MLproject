@@ -5,8 +5,8 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      maxdepth: {type:int, default:2}
+      maxdepth: {type: int, default: 2}
     metrics:
       acc: {type:float}
-    command: |
+    command:
       python TrainAndSaveModel.py --maxdepth {maxdepth}
