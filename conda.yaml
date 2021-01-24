@@ -2,8 +2,8 @@ channels:
 - defaults
 - conda-forge
 dependencies:
-- python
 - pip
 - pip:
- - mlflow
- - scikit-learn
+  - scikit-learn
+  - mlflow
+
