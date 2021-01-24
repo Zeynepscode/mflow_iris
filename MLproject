@@ -9,4 +9,4 @@ entry_points:
     metrics:
       acc: {type:float}
     command: |
-      python TrainAndSaveModel.py --maxdepth {max_depth}
+      python TrainAndSaveModel.py --maxdepth {maxdepth}
