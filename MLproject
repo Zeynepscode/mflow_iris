@@ -1,0 +1,12 @@
+name: irisdata
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      maxdepth: {type:int, default:2}
+    metrics:
+      acc: {type:float}
+    command: |
+      python TrainAndSaveModel.py --maxdepth {max_depth}
