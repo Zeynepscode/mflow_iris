@@ -6,7 +6,12 @@ entry_points:
   main:
     parameters:
       maxdepth: {type: int, default: 2}
+      sepallength: {type: float, default: 4.5}
+      sepalwidth: {type: float, default: 3.2}
+      petallength: {type: float, default: 1.1}
+      petalwidth: {type: float, default: 0.2}
     metrics:
       acc: {type:float}
     command:
-      python TrainAndSaveModel.py --maxdepth {maxdepth}
+      python TrainAndSaveModel.py --maxdepth {maxdepth} --sepallength {sepallength} 
+        --sepalwidth {sepalwidth} --petallength {petallength} --petalwidth {petalwidth}
